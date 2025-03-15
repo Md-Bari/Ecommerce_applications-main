@@ -1,12 +1,13 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import '../../../utils/constants/colors.dart';
 
-class FappBar extends StatelessWidget implements PreferredSizeWidget {
-  const FappBar({super.key});
-  // ignore: non_constant_identifier_names
-  Size get PreferredSize => Size.fromHeight(kToolbarHeight);
+class FAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const FAppBar({super.key});
+
+@override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+
   @override
   Widget build(BuildContext context) {
     return AppBar(
